@@ -44,16 +44,16 @@ function isEven(i) {
 function fahrenheitToCelsius(x) {
     const celcius = ((x - 32) * (5 / 9))
     // console.log(`${celcius} C`)
-        return celcius
+    return celcius
 }
 
 // 6. Create a function called celsiusToFahrenheit that takes a
 // Celsius temperature as an argument and returns the
 // temperature in Fahrenheit.
 function celsiusToFahrenheit(x) {
-    const fahrenheit = (x * 9/5) + 32
+    const fahrenheit = (x * 9 / 5) + 32
     // console.log(`${fahrenheit} F`)
-        return fahrenheit
+    return fahrenheit
 }
 
 // 7. Create a function called fahrenheitToKelvin that takes a
@@ -65,13 +65,13 @@ function celsiusToFahrenheit(x) {
 function fahrenheitToKelvin(x) {
     let c = fahrenheitToCelsius(x)
     const kelvin = c + 273.15
-        return kelvin
+    return kelvin
 }
 
 // 8. Create a function called lesser that takes two numbers as
 // arguments and returns the lesser of them. This function should
 // use an if/else statement.
-function lesser(x,y) {
+function lesser(x, y) {
     if (x < y) {
         return x
     } else {
@@ -101,7 +101,7 @@ function multigreeting(name, code) {
         return `Saluton, ${name}!`
     } else {
         return undefined
-    }       
+    }
 }
 
 // 10. Create a function called "sum" that takes an array of numbers and
@@ -116,9 +116,29 @@ function sum(numbers) {
 
 // 11. Create a function called "average" that takes an array of numbers
 // and returns the average of those numbers.
+function average(numbers) {
+    let count = 0
+    for (let i of numbers) {
+        count += 1
+    }
+    let avg = sum(numbers) / count
+        if (Number.isInteger(avg)) {
+            return avg
+        } else {
+            return undefined
+        }
+}
 
 // 12. Create a function called "minimum" that takes an array of numbers and
 // returns the smallest number in that array.
+function minimum(numbers) {
+    let min = Math.min(...numbers)
+    if (Number.isInteger(min)) {
+        return min
+    } else {
+        return undefined
+    }
+}
 
 // 13. There are many techniques to sort arrays in programming. Your programming
 // language will likely include the ability to do this. We are going to
