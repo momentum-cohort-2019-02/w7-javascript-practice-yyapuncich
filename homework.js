@@ -41,7 +41,6 @@ function isEven(i) {
 // 6. Create a function called fahrenheitToCelsius that takes a
 // Fahrenheit temperature as an argument and returns the
 // temperature in Celsius.
-
 function fahrenheitToCelsius(x) {
     const celcius = ((x - 32) * (5 / 9))
     // console.log(`${celcius} C`)
@@ -72,6 +71,13 @@ function fahrenheitToKelvin(x) {
 // 8. Create a function called lesser that takes two numbers as
 // arguments and returns the lesser of them. This function should
 // use an if/else statement.
+function lesser(x,y) {
+    if (x < y) {
+        return x
+    } else {
+        return y
+    }
+}
 
 // 9. Create a function called multigreeting that takes a name
 // and a language code and returns a version of "Hello, <name>!"
@@ -84,6 +90,19 @@ function fahrenheitToKelvin(x) {
 // eo - Saluton, <name>!
 //
 // If any other language code is used, return nothing.
+function multigreeting(name, code) {
+    if (code === 'en') {
+        return `Hello, ${name}!`
+    } else if (code === 'es') {
+        return `¡Hola, ${name}!`
+    } else if (code === 'fr') {
+        return `Bonjour, ${name}!`
+    } else if (code === 'eo') {
+        return `Saluton, ${name}!`
+    } else {
+        return undefined
+    }       
+}
 
 // 10. Create a function called "sum" that takes an array of numbers and
 // returns the sum of those numbers.
