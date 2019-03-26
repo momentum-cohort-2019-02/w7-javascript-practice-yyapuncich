@@ -44,7 +44,7 @@ function isEven(i) {
 
 function fahrenheitToCelsius(x) {
     const celcius = ((x - 32) * (5 / 9))
-    console.log(`${celcius} C`)
+    // console.log(`${celcius} C`)
         return celcius
 }
 
@@ -63,6 +63,11 @@ function celsiusToFahrenheit(x) {
 // fahrenheitToCelsius function.
 // Absolute zero (0 K) is equivalent to −273.15 C.
 // 1 degree Kelvin equals 1 degree Celsius.
+function fahrenheitToKelvin(x) {
+    let c = fahrenheitToCelsius(x)
+    const kelvin = c + 273.15
+        return kelvin
+}
 
 // 8. Create a function called lesser that takes two numbers as
 // arguments and returns the lesser of them. This function should
