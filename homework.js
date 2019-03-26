@@ -12,7 +12,7 @@ const leftover = 20 % 6
 function greeting(name) {
     return `Hello, ${name}!`
 }
-greeting(Chase)
+greeting('Chase')
 
 // 4. Create a function called isOdd that, given a number, will
 // return true if it is odd and false if it is not. An odd number is a
@@ -43,15 +43,19 @@ function isEven(i) {
 // temperature in Celsius.
 
 function fahrenheitToCelsius(x) {
-    // let fahrenheitTemp = fx
-    // let celciusTemp = cx
-    cx = (x - 32) * (5 / 9))
-        return Math.abs(cx)
+    const celcius = ((x - 32) * (5 / 9))
+    console.log(`${celcius} C`)
+        return celcius
 }
 
 // 6. Create a function called celsiusToFahrenheit that takes a
 // Celsius temperature as an argument and returns the
 // temperature in Fahrenheit.
+function celsiusToFahrenheit(x) {
+    const fahrenheit = (x * 9/5) + 32
+    // console.log(`${fahrenheit} F`)
+        return fahrenheit
+}
 
 // 7. Create a function called fahrenheitToKelvin that takes a
 // Fahrenheit temperature as an argument and returns the
